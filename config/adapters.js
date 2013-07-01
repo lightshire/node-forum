@@ -5,7 +5,7 @@ module.exports.adapters = {
 
 	// If you leave the adapter config unspecified 
 	// in a model definition, 'default' will be used.
-	'default': 'disk',
+	'default': 'mongo',
 	
 	// In-memory adapter for DEVELOPMENT ONLY
 	// (data is NOT preserved when the server shuts down)
@@ -33,5 +33,13 @@ module.exports.adapters = {
 		user		: 'YOUR_MYSQL_USER',
 		password	: 'YOUR_MYSQL_PASSWORD',
 		database	: 'YOUR_MYSQL_DB'
-	}
+	},
+
+	//SAILS MONGO
+	//connection string may inflict errors. developers should find a way to fix this error
+	//TODO
+	mongo: {
+	    module   : 'sails-mongo',
+	    url      : 'mongodb://admin:admin@127.0.0.1:17017/node-forum'
+  	}
 };
