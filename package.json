@@ -5,8 +5,7 @@
     "description": "a Sails application",
     "dependencies": {
         "sails": "0.8.94",
-        "optimist": "0.4.0",
-        "sails-mongo":"dev-master"
+        "optimist": "0.4.0"
     },
     "scripts": {
         "start": "node app.js",
