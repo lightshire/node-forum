@@ -1,7 +1,7 @@
 module.exports = {
 	
 	// Name of the application (used as default <title>)
-	appName: "Sails Application",
+	appName: "Node Forum",
 
 	// Port this Sails application will live on
 	port: 1337,
@@ -25,6 +25,9 @@ module.exports = {
 	//
 	log: {
 		level: 'info'
-	}
+	},
+
+	//this is a fast fix - still need to know how to get the base url
+	base_url: 	"http://localhost:1337"
 
 };

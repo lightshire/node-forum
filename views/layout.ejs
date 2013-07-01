@@ -9,13 +9,31 @@
 		<!-- Stylesheets from your assets folder are included here -->
 		<%- assets.css() %>
 	</head>
-
+		<div class="navbar navbar-static-top">
+			<div class="navbar-inner">
+				<a class="brand" href="#">Node Forum</a>
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			    </a>
+				<div class="nav-collapse collapse">
+					<ul class="nav pull-right">
+						<li><a href="/user/register"><i class='icon-user'>&nbsp;</i>&nbsp;Register / Login</a></li>
+					</li>
+				</div>
+			</div>
+		</div>
 	<body>
 		<%- body %>
 
 		<!-- Templates from your view path are included here -->
 		<%- assets.templateLibrary() %>
 		<!-- Javascripts from your assets folder are included here -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
 		<%- assets.js() %>
+
 	</body>
 </html>

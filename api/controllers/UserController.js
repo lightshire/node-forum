@@ -4,7 +4,7 @@
 ---------------------*/
 var UserController = {
 	register	: 	function(req, res){
-		// res.send("test");
+		res.view();
 	}
 
 
